@@ -1,297 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-	<!-- 优先使用 IE 最新版本和 Chrome -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!-- 360 浏览器就会在读取到这个标签后，立即切换对应的极速核 -->
-	<meta name="renderer" content="webkit">
-	<!-- 禁止百度转码 -->
-	<meta http-equiv="Cache-Control" content="no-siteapp">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>tianmao App</title>
-
-
-
-
-	<!-- 在 IE 禁用点击高亮显示 -->
-	<meta name="msapplication-tap-highlight" content="no">
-
-
-
-
-
-	<!-- Web应用程序清单 -->
-	<link rel="manifest" href="bower.json">
-
-
-
-
-	<!-- 添加到主屏幕的Chrome浏览器在Android上 -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<!-- app 名称 -->
-	<meta name="application-name" content="tianmao app">
-	<!-- app 桌面图标 -->
-	<link rel="icon" sizes="192x192" href="image/chrome-touch-icon-192x192.png">
-
-
-
-
-
-	<!-- 添加到主屏幕Safari在iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<!-- 状态栏 -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<!-- 标题 -->
-	<meta name="apple-mobile-web-app-title" content="tiammao app">
-	<!-- iOS 桌面图标 152*152 -->
-	<link rel="apple-touch-icon" href="image/apple-touch-icon.png">
-
-
-
-
-
-	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-	<meta name="msapplication-TileColor" content="#2F3BA2">
-
-
-
-	<!-- 移动设备上的状态栏 -->
-	<meta name="theme-color" content="#2F3BA2">
-
-
-
-
-
+	<meta charset="UTF-8">
+	<title>时钟</title>
+	<style>
+	#asd{
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border: 1px solid #000;
+	}
+	</style>
 	<!-- bower:css -->
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-	<link rel="stylesheet" href="bower_components/Swiper/dist/css/swiper.css" />
 	<!-- endbower -->
-	<!-- my css -->
-	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<div class="header">
-		<div class="hmenu">
-			
-		</div>
-		<div class="itext">
-			<div class="intet">搜索商品/店铺</div>
-			<div class="sosuo"></div>
-		</div>
-	</div>
-	<!-- banner -->
-	<div class="bannerg swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1LqGQKXXXXXcDXpXXSutbFXXX.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB105ROKXXXXXX1XVXXSutbFXXX.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1sl3XKXXXXXboXFXXXXXXXXXX-1125-543.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1rwrxKXXXXXbgaXXXSutbFXXX.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1FZzsKXXXXXboXXXXeRTP_XXX-1125-543.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1OXzKKXXXXXXkXXXXXXXXXXXX-1125-543.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB1u.aEKXXXXXcUaXXXeRTP_XXX-1125-543.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="image/TB134CrKXXXXXX9apXXSutbFXXX.jpg_q30.jpg_.webp" width="100%" alt="123">
-				</a>
-			</div>
-		</div>	
-		<div class="swiper-pagination"></div>
-	</div>
-	<a href="#" class="imiao">
-		<img src="image/TB1GYLBKXXXXXX0apXXXXXXXXXX-1125-335.png_q30.jpg_.webp" width="100%">
-	</a>	
-	<div class="with-5 jifen">
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1BkDeLVXXXXcoXFXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				积分乐园
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1FPflLVXXXXcMXpXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				充值
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1ivBELFXXXXXOXpXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				天猫国际
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1aJC7LVXXXXbXaXXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				聚划算
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1uXcuLFXXXXX6XFXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				天猫超市
-			</a>
-		</div>
-	</div>	
-	<div class="with-5 jifen2">
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB11w6oLVXXXXaJXpXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				免费试用
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1X4r2KXXXXXblXFXXXXXXXXXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				联想专场
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1fM96LVXXXXbIaXXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				粉丝趴
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB19qHCMpXXXXbMXpXXPzB0OVXX-160-160.jpg_q30.jpg_.webp" width="36px" height="36px" alt="">
-				清单
-			</a>
-		</div>
-		<div class="col-with">
-			<a href="#">
-				<img src="image/TB1Aj_eLVXXXXc3XFXXtz80OVXX-160-160.png_q30.jpg_.webp" width="36px" height="36px" alt="">
-				分类
-			</a>
-		</div>
-	</div>
-	<div class="hotdian">
-		<img src="image/TB1FEnkIpXXXXbkaXXXVQpuFVXX-136-100.png_q30.jpg_.webp" width="67px" height="40px" alt="">	
-		<img src="image/TB1O72lIpXXXXX5XVXXmqjTHFXX-60-60.png_q30.jpg_.webp" width="22px" height="22px">
-		<div class="xlx swiper-container">
-			<ul class="swiper-wrapper">
-				<li class="swiper-slide">
-					<a href="#">
-						<div>小龙虾17元1斤！妃子笑5斤45元！</div>
-						<span>包邮包赔+山竹3斤49.9元</span>
-					</a>
-				</li>
-				<li class="swiper-slide">
-					<a href="#">
-						<div>碧欧泉买1送6,SK-II买1送7</div>
-						<span>买1送7+抢120元券</span>
-					</a>
-				</li>
-				<li class="swiper-slide">
-					<a href="#">
-						<div>GUESS低至99元，奥康98元起</div>
-						<span>1折起+抢120元券</span>
-					</a>
-				</li>
-				<li class="swiper-slide">
-					<a href="#">
-						<div>科莱丽，歌瑞尔0.01元抢！</div>
-						<span>10000个红包+0.01元抢</span>
-					</a>
-				</li>
-				<li class="swiper-slide">
-					<a href="#">
-						<div>小龙虾17元1斤！妃子笑5斤45元！</div>
-						<span>包邮包赔+山竹3斤49.9元</span>
-					</a>
-				</li>
-				<li class="swiper-slide">
-					<a href="#">
-						<div>碧欧泉买1送6,SK-II买1送7</div>
-						<span>买1送7+抢120元券</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<a class="qiang">
-		<img src="image/TB19NwdKXXXXXboXXXXXXXXXXXX-1125-280.jpg_q30.jpg_.webp" alt="">
-	</a>
-	<div class="zhibo">
-		<div class="live"><a href="#"><img src="image/TB1PK7IKXXXXXXHXXXXXXXXXXXX-528-326.jpg_q30.jpg_.webp" alt="" width="100%"></a></div>
-		<div class="live"><a href="#"><img src="image/TB1PK7IKXXXXXXHXXXXXXXXXXXX-528-326.jpg_q30.jpg_.webp" alt="" width="100%"></a></div>
-		<div class="live"><a href="#"><img src="image/TB1PK7IKXXXXXXHXXXXXXXXXXXX-528-326.jpg_q30.jpg_.webp" alt="" width="100%"></a></div>
-		<div class="live"><a href="#"><img src="image/TB1PK7IKXXXXXXHXXXXXXXXXXXX-528-326.jpg_q30.jpg_.webp" alt="" width="100%"></a></div>
-	</div>
-	<div class="biqiang">
-		<span></span>
-		<img src="image/TB1z5R9LXXXXXa5XFXXpu65FpXX-22-26.png_q30.jpg_.webp" width="15px" height="15px" alt="">
-		<span>必抢</span>
-		<span></span>
-	</div>
-	<ul class="row jcz">
-		<li class="col-xs-3"><a href="#">
-				<div>巨超值</div>
-				<img src="image/TB1PD2VJVXXXXb6XXXXSutbFXXX.jpg_q30.jpg_.webp" alt="">
-				<span>￥128</span>
-				<span>￥239</span>
-			</a></li>
-		<li class="col-xs-3"><a href="#">
-				<div>女神范</div>
-				<img src="image/TB2DAZskpXXXXX6XXXXXXXXXXXX_!!2-subaru.png_q30.jpg_.webp" alt="">
-				<span>￥658</span>
-				<span>￥1780</span>
-			</a></li>
-		<li class="col-xs-3"><a href="#">
-				<div>宅男</div>
-				<img src="image/TB1E0w2LpXXXXagXVXXSutbFXXX.jpg_q30.jpg_.webp" alt="">
-				<span>￥178</span>
-				<span>￥376</span>
-			</a></li>
-		<li class="col-xs-3"><a href="#">
-				<div>爱囤货</div>
-				<img src="image/TB1zhb2LFXXXXXDXVXXSutbFXXX.jpg_q30.jpg_.webp" alt="">
-				<span>￥55</span>
-				<span>￥159</span>
-			</a></li>
-	</ul>
+	<canvas width="600px" height="600px" id="asd"></canvas>
 	<!-- bower:js -->
-	<!-- zepto与jQuery类似，不可同用 -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="bower_components/Swiper/dist/js/swiper.js"></script>
-	<script src="bower_components/Touch/touch.js"></script>
 	<!-- endbower -->
-	<!-- my js -->
-	<script src="js/index.js"></script>
-
-	
 </body>
+<script type="text/javascript">
+	var canvas=document.querySelector('canvas')
+	var ctx=canvas.getContext('2d')
+	function r(a){
+		return (Math.PI/180)*a;
+	}
+	function qwer(){
+		ctx.clearRect(0,0,600,600)
+		var now=new Date();
+		var second=now.getSeconds()
+		var minute=now.getMinutes()
+		var hour=now.getHours()
+		// 表框
+		ctx.save()
+		ctx.translate(300,300)
+		ctx.beginPath()
+		ctx.arc(0,0,250,0,r(360))
+		for (var i = 0; i < 60; i++) {
+			ctx.moveTo(0,250)
+			if (i%5===0) {
+			ctx.lineTo(0,210)
+			}else{
+			ctx.lineTo(0,230)
+			}
+			ctx.rotate(r(6))
+		};
+		ctx.stroke()
+		// ctx.restore()
+		ctx.closePath()
+		// 秒针
+		ctx.save()
+		ctx.beginPath()
+		// ctx.translate(300,300)
+		ctx.rotate(second*r(6))
+		ctx.moveTo(0,40)
+		ctx.lineTo(0,10)
+		ctx.moveTo(10,0)
+		ctx.arc(0,0,10,0,r(360))
+		ctx.moveTo(0,-10)
+		ctx.lineTo(0,-200)
+		ctx.stroke()
+		ctx.closePath()
+		ctx.restore()
+		// console.log(second)
+		// 分针
+		ctx.save()
+		ctx.beginPath()
+		// ctx.translate(300,300)
+		ctx.rotate((minute*60+second)*r(0.1))
+		ctx.moveTo(0,30)
+		ctx.lineTo(0,10)
+		ctx.moveTo(10,0)
+		ctx.arc(0,0,10,0,r(360))
+		ctx.moveTo(0,-10)
+		ctx.lineTo(0,-160)
+		ctx.stroke()
+		ctx.closePath()
+		ctx.restore()
+		// console.log(second)
+		// 时针
+		ctx.save()
+		ctx.beginPath()
+		// ctx.translate(300,300)
+		ctx.rotate((hour*60+minute)*r(0.5))
+		ctx.moveTo(0,20)
+		ctx.lineTo(0,10)
+		ctx.moveTo(10,0)
+		ctx.arc(0,0,10,0,r(360))
+		ctx.moveTo(0,-10)
+		ctx.lineTo(0,-120)
+		ctx.stroke()
+		ctx.closePath()
+		ctx.restore()
+		ctx.restore()
+		// console.log(second)
+	}
+	qwer()
+		setInterval(qwer,1000)
+</script>
 </html>
