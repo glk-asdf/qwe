@@ -11,7 +11,8 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		border: 1px solid #000;
+		/*border: 1px solid #000;*/
+		background-image: url('1604.jpg');
 	}
 	</style>
 	<!-- bower:css -->
@@ -37,31 +38,34 @@
 		// 表框
 		ctx.save()
 		ctx.translate(300,300)
-		ctx.beginPath()
-		ctx.arc(0,0,250,0,r(360))
-		for (var i = 0; i < 60; i++) {
-			ctx.moveTo(0,250)
-			if (i%5===0) {
-			ctx.lineTo(0,210)
-			}else{
-			ctx.lineTo(0,230)
-			}
-			ctx.rotate(r(6))
-		};
-		ctx.stroke()
-		// ctx.restore()
-		ctx.closePath()
+		// ctx.beginPath()
+		// ctx.arc(0,0,250,0,r(360))
+		// for (var i = 0; i < 60; i++) {
+		// 	ctx.moveTo(0,250)
+		// 	if (i%5===0) {
+		// 	ctx.lineTo(0,210)
+		// 	}else{
+		// 	ctx.lineTo(0,230)
+		// 	}
+		// 	ctx.rotate(r(6))
+		// };
+		// ctx.stroke()
+		// // ctx.restore()
+		// ctx.closePath()
 		// 秒针
 		ctx.save()
 		ctx.beginPath()
-		// ctx.translate(300,300)
+		ctx.translate(0,80)
 		ctx.rotate(second*r(6))
-		ctx.moveTo(0,40)
-		ctx.lineTo(0,10)
-		ctx.moveTo(10,0)
-		ctx.arc(0,0,10,0,r(360))
-		ctx.moveTo(0,-10)
-		ctx.lineTo(0,-200)
+		ctx.moveTo(0,16)
+		ctx.lineTo(0,4)
+		ctx.moveTo(4,0)
+		ctx.arc(0,0,4,0,r(360))
+		ctx.moveTo(0,-4)
+		ctx.lineTo(0,-36)
+		// ctx.strokeStyle = "orange"
+		ctx.strokStyle='#e48565'
+		ctx.lineWidth=2
 		ctx.stroke()
 		ctx.closePath()
 		ctx.restore()
@@ -76,7 +80,10 @@
 		ctx.moveTo(10,0)
 		ctx.arc(0,0,10,0,r(360))
 		ctx.moveTo(0,-10)
-		ctx.lineTo(0,-160)
+		ctx.lineTo(0,-150)
+		// ctx.strokeStyle='#E7E9E6'
+		ctx.lineWidth=2
+		ctx.lineCap='round'
 		ctx.stroke()
 		ctx.closePath()
 		ctx.restore()
@@ -91,7 +98,10 @@
 		ctx.moveTo(10,0)
 		ctx.arc(0,0,10,0,r(360))
 		ctx.moveTo(0,-10)
-		ctx.lineTo(0,-120)
+		ctx.lineTo(0,-100)
+		// ctx.strokeStyle='#E7E9E6'
+		ctx.lineWidth=3
+		ctx.lineCap='round'
 		ctx.stroke()
 		ctx.closePath()
 		ctx.restore()
